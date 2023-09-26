@@ -1,7 +1,7 @@
 
 alert("Gracias por visitar TIENDA DE ROPA ONLINE");
 let nombreUsuario = prompt("¿Cómo te llamás?");
-alert("Bienvenido/a " + nombreUsuario + ". ¡Comencemos!");
+alert("Bienvenido/a " + nombreUsuario + ". ¡Comencemos!"); 
 
 function compra() {
   
@@ -36,19 +36,34 @@ function elegir() {
       let modaFemenina = prompt(
         "Elegiste indumentaria Femenina.\n¿Qué tipo de prendas quisieras comprar? \n1 - TOPS \n2 - PANTALONES \n3 - AMBOS"
       );
-      alert('Lo siento, en este momento no contamos con stock')
+      if (modaFemenina== 1 ||modaFemenina== 2||modaFemenina== 3) {
+        alert('Lo siento, en este momento no contamos con stock');
+      }else {
+        alert('Tu opcion es inválida');
+        elegir();
+      }
       break;
     case "2":
       let modaMasculina = prompt(
         "Elegiste indumentaria Masculina.\n¿Qué tipo de prendas quisieras comprar? \n1 - TOPS \n2 - PANTALONES \n3 - AMBOS"
       );
-      alert('Lo siento, en este momento no contamos con stock')
+      if (modaMasculina== 1 ||modaMasculina== 2||modaMasculina== 3) {
+        alert('Lo siento, en este momento no contamos con stock');
+      }else {
+        alert('Tu opcion es inválida');
+        elegir();
+      }
       break;
     case "3":
       let modaSinGenero = prompt(
         "Elegiste indumentaria sin género.\n¿Qué tipo de prendas quisieras comprar? \n1 - TOPS \n2 - PANTALONES \n3 - AMBOS"
       );
-      alert('Lo siento, en este momento no contamos con stock')
+      if (modaSinGenero== 1 ||modaSinGenero== 2||modaSinGenero== 3) {
+        alert('Lo siento, en este momento no contamos con stock');
+      }else {
+        alert('Tu opcion es inválida');
+        elegir();
+      }
       break;
     default:
       alert("elegiste una opción inválida");
